@@ -26,7 +26,13 @@ body{
 #seccion1{ background-color: cadetblue;}
 #seccion2{background-color: coral;}
 h1{
-    border: solid wheat;
+    border: 1px solid wheat;
+}
+.social-container{
+    border: 1px solid white;
+}
+.redes{
+    border: 1px solid whitesmoke;
 }
 
 /*----Section1-----*/
@@ -59,28 +65,45 @@ h1{
 }
 
 .btn-register{
-    text-align: center;
+    text-align: center;/*Alinear texto en el centro*/
+    margin-bottom: 122px;/*Margen inferior*/
 }
 .btn-register a{
-    width: 400px;
-    height: 86px;
-    border-radius: 50px;
-    font-size: 25px;
+    width: 400px;/*Ancho*/
+    height: 86px;/*Altura*/
+    border-radius: 50px;/*Borde redondo*/
+    font-size: 25px; /*tamaño de la letra*/
     color: var(--Violet);
-    background-color: white;
-    display: inline-block;
-    padding: 22px;
-    text-decoration: none;
+    background-color: white;/*Color de fondo*/
+    display: inline-block;/**/
+    padding: 22px;/*Margen interior*/
+    text-decoration: none;/*Eliminar decoraciones por defecto */
 }
 .btn-register a:hover{
     background-color: var(--Soft_Magenta);
-    color: white;
-    cursor: pointer;
+    color: white;/*Cambiar color de letra */
+    cursor: pointer;/*Cambiar el estilo del cursor*/
 }
 .social-container{
-    text-align: center;
+    text-align: center;/**/
 }
+
+.redes{
+    width: 208px;/*Ancho*/
+    display: inline-flex;/*Hubicar en linea los elementos */
+    justify-content: space-between;/*Colocar espacio entre elementos*/
+}
+
+
 .redes a{
+    border: 2px solid white;/**/
+    text-decoration: none;/*Eliminar decoraciones por defecto*/
+    color: white;/*cambiar color de la letra */
+    width: 60px;/*Ancho*/
+    height: 60px;/*Altura*/
+    border-radius: 50%;
+    font-size: 28px;/*Los iconos se comportan como texto*/
+    padding-top: 12px;
     
 }
 
