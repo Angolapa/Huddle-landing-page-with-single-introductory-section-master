@@ -6,7 +6,24 @@
     --Soft_Magenta: hsl(300, 69%, 71%);
 
 }
-/*Mobile first*/
+/*Mobile first 375px*/
+body{
+    font-family: "Open Sans", sans-serif;
+}
+h1{
+    font-family: "Poppins", sans-serif;
+}
+#section1{
+    background-color: cadetblue;
+}
+#section2{
+    background-color: coral;
+}
+/*----Section1-----*/
+
+
+
+
 
 /*------Footer--------*/
 .attribution { font-size: 11px; text-align: center; }
