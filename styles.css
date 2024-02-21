@@ -7,20 +7,82 @@
 
 }
 /*Mobile first 375px*/
+*{
+    margin: 0;/*Margenes*/
+    padding: 0;/*Margenes interiores*/
+    box-sizing: border-box;/*Tamaño de caja se va a mantener estable*/
+}
+main{
+    width: 595px;/*Ancho*/
+    height:1448px ; /*Alto*/
+    margin: 75px auto 40px; /*Arriba Derecha Abajo Izquierda*/
+}
+
 body{
     font-family: "Open Sans", sans-serif;
 }
-h1{
-    font-family: "Poppins", sans-serif;
-}
-#section1{
-    background-color: cadetblue;
-}
-#section2{
-    background-color: coral;
-}
-/*----Section1-----*/
+/*Ayuda visual*/
 
+#seccion1{ background-color: cadetblue;}
+#seccion2{background-color: coral;}
+h1{
+    border: solid wheat;
+}
+
+/*----Section1-----*/
+#seccion1{
+    height: 724px;/*Alto*/
+}
+#logo-container{
+    width: 180px;/*Ancho*/
+}
+#mockup{
+    width: 595px;/*Ancho*/
+}
+/*---------Section2---------*/
+
+#seccion2{
+    height: 724px;/*Alto*/
+}
+h1{
+
+    font-family: "Poppins", sans-serif;
+    font-size: 46px;/*Tamaño de la letra*/
+    text-align: center;/*Centrar texto*/
+    height: 170px;/*Alto*/
+}
+
+#seccion2 p{
+    font-size: 32px;/*Tamaño de la letra*/ 
+    text-align: center;/*Centrar texto*/
+    height: 280px;/*Alto*/
+}
+
+.btn-register{
+    text-align: center;
+}
+.btn-register a{
+    width: 400px;
+    height: 86px;
+    border-radius: 50px;
+    font-size: 25px;
+    color: var(--Violet);
+    background-color: white;
+    display: inline-block;
+    padding: 22px;
+    text-decoration: none;
+}
+.btn-register a:hover{
+    background-color: var(--Soft_Magenta);
+    color: white;
+    cursor: pointer;
+}
+.social-container{
+    text-align: center;
+}
+.redes a{
+    
+}
 
 
 
