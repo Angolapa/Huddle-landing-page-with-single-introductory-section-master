@@ -20,9 +20,14 @@ main{
 
 body{
     font-family: "Open Sans", sans-serif;
+    color: white;
+    background-image: url(images/bg-mobile.svg);/*Imagen de fondo*/
+    background-color: var(--Violet);/*Color de fondo*/
+    background-repeat: no-repeat;/*Evitar que repita la imagen*/
+    background-size: 100%;/*Ajustar al tamaño de la pantalla*/ 
 }
 /*Ayuda visual*/
-
+/*
 #seccion1{ background-color: cadetblue;}
 #seccion2{background-color: coral;}
 h1{
@@ -34,7 +39,7 @@ h1{
 .redes{
     border: 1px solid whitesmoke;
 }
-
+*/
 /*----Section1-----*/
 #seccion1{
     height: 724px;/*Alto*/
@@ -104,12 +109,88 @@ h1{
     border-radius: 50%;
     font-size: 28px;/*Los iconos se comportan como texto*/
     padding-top: 12px;
-    
 }
 
-
-
+.redes a:hover{
+    border-color: var(--Soft_Magenta);/*Cambia el color del borde al pasar*/
+    color: var(--Soft_Magenta);/*Cambia la letra al pasar*/
+    cursor: pointer;/*Cambiar el cursor al pasar*/
+}
 
 /*------Footer--------*/
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+/*----------Desktop (1440px)---------*/
+
+@media only screen and (min-width: 1284px){
+    main{
+        margin: 60px auto 0px;/*Margenes arriba derecha abajo izquierda*/
+        width: 1284px; /*Alto*/
+        height: 700px;/*Ancho*/
+        display: grid;/*Forma de los items*/
+        grid-template-columns: 1fr 1fr; /*Coolumnas*/
+    }
+    body{
+        background-image: url(images/bg-desktop.svg);/*Imagen mas grande para el desktop*/
+        background-size: unset;
+    }
+/*-------------Section1---------*/
+    #seccion1{
+        width: 753px;/*Alto*/
+        height: 700px;/*Ancho*/
+    }
+    #logo-container{
+        height: 134px;/*Ancho*/
+    }
+    #mockup{
+        width: 696px;/*Alto*/
+    }
+
+    /*-------------Section2---------*/
+    #seccion2{
+        height: 700px; /*Ancho*/
+    }
+    h1{
+        margin-top: 165px;/*Margen superior*/
+        height: 133px;/*Ancho*/
+        font-size: 39px;/*Tamaño de la fuente*/
+        text-align: left;/*Centrar texto a la izquierda*/
+        padding-right: 93px;/*Margen interior derecho*/
+        
+    }
+    #seccion2 p{
+        height: 98px;/*Ancho*/
+        font-size: 18px;/*Tamaño de la letra*/
+        text-align: left;/*Mover texto a izquierda*/
+        padding-right: 17px;/*Margen interno derecho*/
+    }
+    .btn-register{
+        text-align: left;/*Centro*/
+        margin-bottom: 179px;/*Margen inferior*/
+    }
+    .btn-register a{
+        text-align: center;/*Centrar texto*/
+        width: 200px;/*Ancho*/
+        height: 58px;/*Alto*/
+        font-size: 20px;/*Tamaño de la fuente*/
+        padding-top: 14px;/*Margen Superior*/
+    }
+    .social-container{
+        text-align: right; /*Mover texto derecha*/
+    }
+    .redes{
+        width: 156px;/*Ancho*/
+    }
+    .redes a{
+        width: 44px;/*Ancho*/
+        height: 44px;/*Alto*/
+        font-size: 22px; /*Tamaño de la fuente*/
+        padding:8px; /*Margen interior */
+        text-align: center;/*Alinear texto en este caso los iconos*/
+    }
+
+
+}
+
